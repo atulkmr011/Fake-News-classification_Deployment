@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+        <title>Fake news classification - Sentiment Analyser</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='food-favicon.ico') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<!-- Website Title -->
+    	<div class="container">
+            <h2 class='container-heading'><span class="heading_font">Fake news classification</span> Sentiment Analyser</h2>
+            <div class='description'>
+    			<p>A Machine Learning Web App, Built with Flask.</p>
+    		</div>
+    	</div>
+
+		<!-- Result -->
+		<div class="results">
+			{% if prediction==1 %}
+				<h1>Prediction: <span class='safe'>This is a Real News.</span></h1>
+				<img class="gif" src="{{ url_for('static', filename='') }}" alt="">
+			{% elif prediction==0 %}
+				<h1>Prediction: <span class='danger'>This is a Fake News.</span></h1>
+				<img class="gif" src="{{ url_for('static', filename='') }}" alt="">
+			{% endif %}
+		</div>
+
+		<!-- Footer -->
+		<div class='footer'>
+            <div class="contact">
+                <a target="_blank" href=""><i class=""></i></a>
+                <a target="_blank" href=""><i class=""></i></a>
+            </div>
+            <p class='footer-description'></p>
+        </div>
+
+	</body>
+</html>
