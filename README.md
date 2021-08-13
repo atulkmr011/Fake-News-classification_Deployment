@@ -31,7 +31,7 @@ This is a classification model.
 
 5: MatplotLib (https://github.com/matplotlib/matplotlib)
 
-6: NLTK : For Data cleaning
+6: NLTK (https://www.nltk.org/)
 
 
 # Algorithm Used:
